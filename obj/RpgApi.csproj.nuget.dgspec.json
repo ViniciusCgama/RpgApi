@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\coelh\\Documents\\RpgApi\\RpgApi.csproj": {}
+    "c:\\Users\\coelh\\Documents\\RpgApi\\RpgApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\coelh\\Documents\\RpgApi\\RpgApi.csproj": {
+    "c:\\Users\\coelh\\Documents\\RpgApi\\RpgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\coelh\\Documents\\RpgApi\\RpgApi.csproj",
+        "projectUniqueName": "c:\\Users\\coelh\\Documents\\RpgApi\\RpgApi.csproj",
         "projectName": "RpgApi",
-        "projectPath": "C:\\Users\\coelh\\Documents\\RpgApi\\RpgApi.csproj",
+        "projectPath": "c:\\Users\\coelh\\Documents\\RpgApi\\RpgApi.csproj",
         "packagesPath": "C:\\Users\\coelh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\coelh\\Documents\\RpgApi\\obj\\",
+        "outputPath": "c:\\Users\\coelh\\Documents\\RpgApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\coelh\\AppData\\Roaming\\NuGet\\NuGet.Config"
