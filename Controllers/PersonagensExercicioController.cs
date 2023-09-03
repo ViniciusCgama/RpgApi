@@ -47,19 +47,19 @@ namespace RpgApi.Controllers
         }
 
         [HttpPost("PostValidacaoMago")]
-       public IActionResult PostValidacaoMago([FromBody] Personagem personagem)
+       public IActionResult PostValidacaoMago([FromBody] Personagem novoPersonagem)
 {
-    if (personagem == null)
+    if (novoPersonagem == null)
     {
         return BadRequest("Dados de personagem inválidos");
     }
 
-    if (personagem.Classe != ClasseEnum.Mago)
+    if (novoPersonagem.Classe != ClasseEnum.Mago)
     {
         return BadRequest("Apenas personagens da classe Mago podem ser adicionados.");
     }
 
-    if (personagem.Inteligencia < 35)
+    if (novoPersonagem.Inteligencia < 35)
     {
         return BadRequest("A inteligência deve ser no mínimo 35 para um personagem Mago.");
     }
@@ -81,7 +81,7 @@ namespace RpgApi.Controllers
         public IActionResult GetEstatisticas()
         {
             int quantidadeDePersonagens = personagens.Count;
-            
+             
             int somatorioDeInteligencia = personagens.Sum(p => p.Inteligencia);
             
             var estatisticas = new
