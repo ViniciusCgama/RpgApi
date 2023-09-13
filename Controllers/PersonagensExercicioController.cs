@@ -36,7 +36,7 @@ namespace RpgApi.Controllers
         [HttpPost("PostValidacao")]
         public IActionResult PostValidacao([FromBody] Personagem novoPersonagem)
         {
-            if (novoPersonagem.Inteligencia == 0 || novoPersonagem.Defesa < 30)
+            if (novoPersonagem.Inteligencia == 0 || novoPersonagem.Defesa > 30)
                 return BadRequest("Inteligência não pode ter um valor maior que 30 ou Defesa menor que 10.");
             
             if (novoPersonagem.Defesa < 10)
