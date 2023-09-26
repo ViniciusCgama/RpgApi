@@ -21,6 +21,70 @@ namespace RpgApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("RpgApi.Models.Armas", b =>
+                {
+                    b.Property<int>("IdF")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdF"));
+
+                    b.Property<int>("DanoF")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NomeF")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdF");
+
+                    b.ToTable("TB_ARMAS", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            IdF = 1,
+                            DanoF = 50,
+                            NomeF = "Espada de cria demoniaca"
+                        },
+                        new
+                        {
+                            IdF = 2,
+                            DanoF = 45,
+                            NomeF = "Faca envenenada"
+                        },
+                        new
+                        {
+                            IdF = 3,
+                            DanoF = 75,
+                            NomeF = "Arco da fenda do vazio"
+                        },
+                        new
+                        {
+                            IdF = 4,
+                            DanoF = 69,
+                            NomeF = "Machado do Cleyton"
+                        },
+                        new
+                        {
+                            IdF = 5,
+                            DanoF = 35,
+                            NomeF = "Chicote do Desejo"
+                        },
+                        new
+                        {
+                            IdF = 6,
+                            DanoF = 42,
+                            NomeF = "Baseball BAT"
+                        },
+                        new
+                        {
+                            IdF = 7,
+                            DanoF = 50,
+                            NomeF = "Manopla do grande roxo"
+                        });
+                });
+
             modelBuilder.Entity("RpgApi.Models.Personagem", b =>
                 {
                     b.Property<int>("Id")
